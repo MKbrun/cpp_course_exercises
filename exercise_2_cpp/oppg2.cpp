@@ -9,5 +9,6 @@ int main() {
 
   return 0;
 
-  //
+  // Trur ikke dette vil fungere da nullptr er en definert ting man kan bruke,
+  // vil det ikke være rett å bytte den ut med "Dette er en tekst" ?
 }
