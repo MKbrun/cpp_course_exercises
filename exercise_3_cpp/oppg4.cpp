@@ -42,8 +42,8 @@ void replaceFromToWith(string &subject, int from, int to, string with) {
 
 // Oppgave f)
 string getSubStringOf(string subject, int cutoff) {
-  if (subject.size() - 1 < cutoff)
-    return subject;
+  if (static_cast<int>(subject.size() - 1) < cutoff)
+      return subject;
   return subject.substr(0, cutoff);
 }
 
@@ -53,18 +53,19 @@ bool substringExists(string subject, string substring) {
 }
 
 // Oppgave h)
-void printIndexesOfSubstring(string subject, string substring) {
-  if (!substringExists(subject, substring)) {
-    cout << "\"" << substring << "\" does not exit in \"" << subject << "\"" << endl;
-    return;
-  }
+void printIndexesOfSubstring(std::string subject, std::string substring) {
+    if (!substringExists(subject, substring)) {
+        cout << "\"" << substring << "\" does not exist in \"" << subject << "\"" << endl;
+        return;
+    }
 
-  int index = subject.find(substring, 0);
-  while (index != string::npos) {
-    cout << "\"" << substring << "\" found at index " << index << endl;
-    index = subject.find(substring, index + 1);
-  }
+    size_t index = subject.find(substring, 0);  // Change to size_t
+    while (index != string::npos) {
+        cout << "\"" << substring << "\" found at index " << index << endl;
+        index = subject.find(substring, index + 1);
+    }
 }
+
 
 int main() {
   string words[length];
