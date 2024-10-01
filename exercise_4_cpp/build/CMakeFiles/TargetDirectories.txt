@@ -1,0 +1,4 @@
+/mnt/c/repos/cpp_course_exercises/exercise_4_cpp/build/CMakeFiles/exercise_4_cpp.dir
+/mnt/c/repos/cpp_course_exercises/exercise_4_cpp/build/CMakeFiles/oppg1.dir
+/mnt/c/repos/cpp_course_exercises/exercise_4_cpp/build/CMakeFiles/edit_cache.dir
+/mnt/c/repos/cpp_course_exercises/exercise_4_cpp/build/CMakeFiles/rebuild_cache.dir
